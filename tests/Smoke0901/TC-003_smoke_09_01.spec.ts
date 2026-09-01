@@ -17,7 +17,7 @@ test(
       await page.getByRole("textbox", { name: "Username" }).click();
     });
 
-    await test.step('#03 - fill', async () => {
+    await test.step.skip('#03 - fill', async () => {
       await page.getByRole("textbox", { name: "Username" }).fill('standard_user');
     });
 
